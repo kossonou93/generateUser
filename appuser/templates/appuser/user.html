@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title</th>
+                <th>Gender</th>
+                <th>N° Location</th>
+                <th>Name Location</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Post Code</th>
+                <th>Email</th>
+                <th>Username</th>
+                <td>salt</td>
+                <th>Date</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Cell</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.title_name }}</td>
+                <td>{{ user.gender }}</td>
+                <td>{{ user.number_location }}</td>
+                <td>{{ user.name_location }}</td>
+                <td>{{ user.city }}</td>
+                <td>{{ user.state }}</td>
+                <td>{{ user.country }}</td>
+                <td>{{ user.postcode }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.salt }}</td>
+                <td>{{ user.date }}</td>
+                <td>{{ user.age }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.cell }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
